@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.box {
+  position: absolute;
+  left: 33%;
+  top: 30%; 
+  background-color: lightblue;
+  width: 20%;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 40px 50px 10px;
+  margin: 10px;
+  
+}
+input[type=text], input[type=password] {
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 15px;
+
+}
+button {
+  background-image: black;
+  border: 2px solid grey;
+  color:black;
+  padding: 14px 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  width: 275px;
+  height: 40px;
+}
+button:hover{
+  opacity: 0.4;
+}
+
+</style>
+</head>
+<body>
+<form action="LoginServlet" method="get">
+<div class="box">
+    <label for="uname"><b>USERNAME</b></label><br>
+    <input type="text" placeholder="Enter Username" name="username" required>
+    <label for="psw"><b>PASSWORD</b></label><br>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <button type="submit" id="button">Login</button>
+  </div>
+</form>
+</body>
+</html>
